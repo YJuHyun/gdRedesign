@@ -1,0 +1,564 @@
+.mainSlide{
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.mainSlide img{
+  width: 100%;
+}
+.stockList{
+  width: 80%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  max-width: 1280px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.stockList li{
+  width: 33.33%;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100px;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.stockList li h5{
+  font-size: 20px;
+  width: 35%;
+  line-height: 1.4;
+}
+.stockList li span:first-of-type{
+  font-weight: 400;
+  font-size: 14px;
+  width: 35%;
+
+}
+.stockList li .stockCount{
+  font-weight: 700;
+  font-size: 36px;
+}
+.stock{
+  background-color: rgba(77, 77, 79, .85);
+}
+.ir{
+  background-color:rgba(163, 165, 168, .85);
+}
+.notice{
+  background-color: rgba(239, 65, 35, .85);
+}
+.ir span{
+  width: calc(100% - 218px);
+  display: inline-block; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+.ir .download{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.ir a{
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 3px 8px;
+  line-height: 18px;
+  display: inline-block;
+  margin-left: 2%;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+.ir .download img{
+  width: 18px;
+  margin-left: 4px;
+}
+.stockList .notice{
+  flex-direction: row;
+  justify-content: start;
+}
+.notice a{
+  width:100%; 
+  display: inline-block; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  color: #fff;
+}
+/* 프로덕트 */
+.prodSlide:hover .productGo{
+  opacity: 1;
+}
+.prodSlide img{
+  width: 100%;
+}
+.prodImg{
+  position: relative;
+}
+.prodSlide .productGo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0;
+  transition-duration: 0.3s;
+  width: 48px;
+  height: 48px;
+}
+.graySmall{
+  font-size: 13px;
+  color: #4d4d4f;
+  margin: 13px 0;
+  text-align: center;
+}
+.prodSlide h4{
+  font-size: 20px;
+  color: #ef4123;
+  text-align: center;
+}
+/* 회사가치 */
+.company{
+  width: 100%;
+  height: 100vh;
+  background: url(../images/bg.jpg) no-repeat center / cover;
+  position: relative;
+}
+.company .icoContainer{
+  width: 30%;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%) translateY(-50%);
+  justify-content: space-between;
+}
+.company .icoContainer .iconWrap{
+  width: calc((100% - 16px) / 2);
+  background: rgba(239, 65, 35, .7);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+.company .icoContainer .iconWrap::after{
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+.company .icoContainer .iconWrap div{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+.company .icoContainer .iconWrap img{
+  width: 70%;
+  margin: 0 auto;
+}
+.compTxt{
+  width: 100%;
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+}
+.compTxt h3{
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.compTxt p{
+  font-size: 20px;
+  font-weight: 200;
+}
+.noticeSec .cont{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+.noticeSec h2{
+  width: 100%;
+}
+.noticeSec span{
+  display: block;
+}
+.noticeSec .swiper{
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 70px;
+  
+}
+.noticeSlide{
+  width: 49.296875%;
+}
+.noticeSlide .swiper-slide{
+  height: 480px;
+}
+
+.noticeSlide a{
+  display: block;
+  height: 480px;
+  position: relative;
+  overflow: hidden;
+}
+.noticeSlide img{
+  width: auto;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.noticeSlide .swiper-wrapper{
+  align-items: baseline;
+}
+.noticeList{
+  margin-top: 70px;
+  width: 49.296875%;
+}
+.noticeList h3{
+  font-size: 28px;
+  font-weight: 700;
+  color: #ef4123;
+  display: inline-block; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.noticePara{
+  font-weight: 300;
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.swiper-navigation{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+}
+.swiper-navigation div{
+  width: 48px;
+  height: 48px;
+}
+.swiper-navigation div::after{
+  content: '';
+}
+.swiper-navigation .swiper-button-prev{
+  background: url(../images/btn_prev.svg) center no-repeat;
+}
+.swiper-navigation .swiper-button-next{
+  background: url(../images/btn_next.svg) center no-repeat;
+  left: 10%;
+  right: auto;
+}
+.volunteer ul{
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.volunteer ul li{
+  width: calc((100% - 48px) / 4);
+  overflow: hidden;
+}
+.volunteer ul li:last-child{
+  margin-right: 0;
+}
+.volunteer ul li a{
+  display: block;
+  position: relative;
+  height: 210px;
+}
+.volunteer ul li a img{
+  height: 210px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.volunteer ul li .info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .0);
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.3s;
+}
+.volunteer ul li:hover .info{
+  background-color: rgba(0, 0, 0, .5);
+}
+.volunteer ul li .info button{
+  border: 1px solid #ef4123;
+  color: #ef4123;
+  border-radius: 30px;
+  padding: 8px 16px;
+  background: none;
+  position: absolute;
+  left: 50%;
+  top: -20%;
+  transform: translateX(-50%) translateY(-50%);
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 12px;
+}
+.volunteer ul li:hover button{
+  top: 50%;
+}
+.volunteer ul li h4{
+  color: #ef4123;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 22px 0;
+}
+.volunteer ul li p{
+  line-height: 1.6;
+  font-size: 14px;
+}
+.brand{
+  background-color: #ef4123;
+  padding: 60px 0;
+}
+.brand h2{
+  color: #fff;
+}
+.brand .assTit{
+  color: #fff;
+}
+.brandList{
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+}
+.brandList li{
+  width: calc((100% - 80px) / 6);
+  margin-right: 16px;
+}
+.brandList li:last-child{
+  margin-right: 0;
+}
+.brandList li a{
+  display: block;
+  width: 100%;
+}
+.brandList img{
+  width: 100%;
+}
+@media all and (max-width:1024px){
+  .stockList{
+    width: 100%;
+  }
+  .company .icoContainer .iconWrap{
+    font-size: 20px;
+  }
+  .compTxt h3{
+    font-size: 28px;
+  }
+  .compTxt p{
+    font-size: 18px;
+  }
+  .swiper-navigation .swiper-button-next{
+    left: 10%;
+  }
+  .volunteer ul {
+    flex-wrap: wrap;
+  }
+  .volunteer ul li{
+    width: calc((100% - 18px) / 2);
+    margin: 0;
+    position: relative;
+    margin-bottom: 18px;
+  }
+  .volunteer ul li a{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .volunteer ul li a img{
+    width: auto;
+    height: 100%;
+  }
+  .volunteer ul li:nth-child(3) a img,
+  .volunteer ul li:nth-child(4) a img{
+    width: 100%;
+    height: auto;
+  }
+
+  .volunteer ul li a p{
+    display: none;
+  }
+  .volunteer ul li a .info{
+    display: none;
+  }
+  .volunteer ul li a:nth-child(2){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .2);
+    width: 100%;
+  }
+  .volunteer ul li a:nth-child(2) h4{
+    color: #fff;
+  }
+}
+@media all and (max-width:768px){
+  h1{
+    width: 20.572916666%;
+  }
+  .stockList{
+    flex-wrap: wrap;
+    position: static;
+    transform: none;
+  }
+  .stockList li{
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    height: auto;
+  }
+  .stockList li h5{
+    font-size: 32px;
+    margin-right: 10px;
+    width: auto;
+  }
+  .stockList li span:first-of-type{
+    width: auto;
+  }
+  .stockList li .stockCount{
+    flex-grow: 1;
+    width: auto;
+    text-align: right;
+  }
+  .stockList .ir .download{
+    flex-grow: 1;
+    width: auto;
+    justify-content: flex-end;
+  }
+  .stockList .ir .download a{
+    margin-left: 18px;
+  }
+  .stockList .notice a{
+    text-align: right;
+  }
+  .company .icoContainer{
+    width: 50%;
+  }
+  .company .icoContainer span{
+    font-size: 16px;
+  }
+  .compTxt{
+    width: 80%;
+  }
+  .compTxt h3{
+    font-size: 20px;
+  }
+  .compTxt p{
+    font-size: 16px;
+  }
+  .noticeSec .cont{
+    flex-direction: column;
+  }
+  .noticeSec .swiper{
+    width: 100%;
+  }
+  .noticeSlide{
+    width: 100%;
+    order: 1;
+    margin-top: 40px;
+  }
+  .noticeSlide .swiper-slide{
+    height: 320px;
+  }
+  
+  .noticeSlide a{
+    display: block;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+  }
+  .noticeSlide img{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .noticeList{
+    order: 2;
+  }
+  .noticeSlide .swiper-wrapper{
+    align-items: start;
+  }
+  .swiper-navigation{
+    display: none;
+  }
+  .volunteer ul li{
+    width: 100%;
+    margin: 0;
+    position: relative;
+    margin-bottom: 18px;
+    height: 100px;
+  }
+  .volunteer ul li a{
+    overflow: hidden;
+  }
+  .volunteer ul li a img{
+    width: 100%;
+    height: auto;
+  }
+
+
+  .volunteer ul li a p{
+    display: none;
+  }
+  .volunteer ul li a .info{
+    display: none;
+  }
+  .volunteer ul li a:nth-child(2){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .2);
+    width: 100%;
+  }
+  .volunteer ul li a:nth-child(2) h4{
+    color: #fff;
+    font-size: 24px;
+  }
+}
