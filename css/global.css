@@ -242,6 +242,9 @@ footer .copy{
   cursor: pointer;
   
 }
+.close{
+  display: none;
+}
 
 @media all and (max-width:1024px){
   .cont{
@@ -338,6 +341,9 @@ footer .copy{
     top: 3vw;
   }
   .hambuger{
+    display: block;
+  }
+  .close{
     display: block;
   }
 }
