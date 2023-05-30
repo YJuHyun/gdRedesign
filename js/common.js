@@ -100,14 +100,14 @@ $( document ).ready( function() {
   var volunteerOffset = $( '.volunteer' ).offset();
        
   $( window ).scroll( function() {
-    if ( $( document ).scrollTop() >  volunteerOffset.top - 500){
+    if ( $( document ).scrollTop() >  volunteerOffset.top - 400){
       $('.volunteer').addClass('sectionUp')
-    }else if ( $( document ).scrollTop() >  noticeSecOffset.top - 500){
+    }else if ( $( document ).scrollTop() >  noticeSecOffset.top - 400){
       $('.noticeSec').addClass('sectionUp')
-    }else if ( $( document ).scrollTop() > companyOffset.top - 500){
+    }else if ( $( document ).scrollTop() > companyOffset.top - 400){
       $('.icoContainer').addClass('offset'),
       $('.compTxt').addClass('offsetT')
-    }else if ( $( document ).scrollTop() >  productSecOffset.top - 500){
+    }else if ( $( document ).scrollTop() >  productSecOffset.top - 400){
       $('.productSec').addClass('sectionUp')
     }
   })
