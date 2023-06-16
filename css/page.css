@@ -138,9 +138,10 @@ section.sectionUp{
 /* 회사가치 */
 .company{
   width: 100%;
-  height: 100vh;
-  background: url(../images/bg.jpg) no-repeat center / cover;
   position: relative;
+}
+.company > img{
+  width: 100%;
 }
 .company .icoContainer{
   width: 30%;
@@ -297,6 +298,9 @@ section.sectionUp{
   left: 10%;
   right: auto;
 }
+.noticePagination.swiper-pagination{
+  display: none;
+}
 .volunteer ul{
   margin-top: 40px;
   display: flex;
@@ -393,6 +397,9 @@ section.sectionUp{
 @media all and (max-width:1024px){
   .stockList{
     width: 100%;
+  }
+  .company .icoContainer{
+    width: 40%;
   }
   .company .icoContainer .iconWrap{
     font-size: 20px;
@@ -498,13 +505,19 @@ section.sectionUp{
     text-align: right;
   }
   .company .icoContainer{
-    width: 50%;
+    width: 60%;
   }
   .company .icoContainer span{
     font-size: 16px;
   }
   .compTxt{
     width: 80%;
+  }
+  .company .icoContainer.offset{
+    top: 40%;
+  }
+  .compTxt.offsetT{
+    top: 70%;
   }
   .compTxt h3{
     font-size: 20px;
@@ -547,6 +560,19 @@ section.sectionUp{
   .noticeSlide .swiper-wrapper{
     align-items: start;
   }
+  .noticePagination.swiper-pagination{
+    display: flex;
+    justify-content: center;
+    transform: translateY(45px);
+  }
+  .noticePagination .swiper-pagination-bullet{
+    background-color: #4d4d4f;
+    opacity: 0.3;
+  }
+  .noticePagination .swiper-pagination-bullet-active{
+    background-color: #ef4123;
+    opacity: 1;
+  }
   .swiper-navigation{
     display: none;
   }
@@ -559,6 +585,7 @@ section.sectionUp{
   }
   .volunteer ul li a{
     overflow: hidden;
+    height: 100px;
   }
   .volunteer ul li a img{
     width: 100%;
@@ -586,4 +613,28 @@ section.sectionUp{
     color: #fff;
     font-size: 24px;
   }
+}
+@media all and (max-width: 450px) {
+  .company .icoContainer{
+    width: 60%;
+  }
+  .company .icoContainer span{
+    font-size: 12px;
+  }
+  .compTxt{
+    width: 80%;
+  }
+  .company .icoContainer.offset{
+    top: 30%;
+  }
+  .compTxt.offsetT{
+    top: 55%;
+  }
+  .compTxt h3{
+    font-size: 16px;
+  }
+  .compTxt p{
+    font-size: 12px;
+  }
+  
 }

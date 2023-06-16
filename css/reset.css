@@ -45,6 +45,7 @@ q:before, q:after {
     content:none;
 }
 
+
 a {
     margin:0;
     padding:0;
@@ -99,3 +100,12 @@ input, select {
 }
 
 *{box-sizing: border-box;}
+
+input, textarea, button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}

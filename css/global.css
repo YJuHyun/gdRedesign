@@ -29,6 +29,7 @@ h2{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
 }
 /* 헤더 */
 header{
@@ -111,7 +112,20 @@ h1{
 .menuInner .innerMenu .innerList .smallList li:hover a{
   font-weight: 700;
 }
-
+.crum{
+  display: flex;
+  margin-bottom: 16px;
+}
+.crum li:first-child:after{
+  content: '>';
+  color: #ef4123;
+  font-weight: 700;
+  padding-right: 5px;
+}
+.crum a{
+  color: #ef4123;
+  font-weight: 700;
+}
 .search{
   width: 36.320754717%;
   border: 1px solid #ef4123;
@@ -245,7 +259,46 @@ footer .copy{
 .close{
   display: none;
 }
-
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+.pagination li{
+  margin-right: 21px;
+  order: 1;
+}
+.pagination li.prevPage{
+  order: 0;
+}
+.pagination li.nextPage{
+  order: 2;
+}
+.pagination a{
+  display: block;
+  margin-top: 60px;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border: 1px solid #666;
+  line-height: 48px;
+  color: #666;
+}
+.pagination a:hover{
+  background: #ef4123;
+  border: 0;
+  color: #fff;
+}
+.pagination .material-symbols-outlined {
+  position: static;
+  line-height: 48px;
+  font-size: 16px;
+  text-align: center;
+}
+.pagination .pageNow a{
+  background-color: #ef4123;
+  border: 0;
+  color: #fff;
+}
 @media all and (max-width:1024px){
   .cont{
     width: 90%;
@@ -262,7 +315,7 @@ footer .copy{
     flex-direction: column;
     background-color: #fff;
     position: fixed;
-    width: 40vw;
+    width: 300px;
     padding: 3vw;
     height: 100vh;
     justify-content: flex-start;
@@ -276,6 +329,7 @@ footer .copy{
   }
   .gnb{
     order: 2;
+    width: 100%;
   }
   .gnb .mainMenu{
     display: flex;
