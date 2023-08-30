@@ -1,16 +1,5 @@
 $( document ).ready( function() {
-    $( window ).scroll( function() {
-      if ( $( document ).scrollTop() >  volunteerOffset.top - 600){
-        $('.volunteer').addClass('sectionUp')
-      }else if ( $( document ).scrollTop() >  noticeSecOffset.top - 600){
-        $('.noticeSec').addClass('sectionUp')
-      }else if ( $( document ).scrollTop() > companyOffset.top - 600){
-        $('.icoContainer').addClass('offset'),
-        $('.compTxt').addClass('offsetT')
-      }else if ( $( document ).scrollTop() >  productSecOffset.top - 600){
-        $('.productSec').addClass('sectionUp')
-      }
-    })
+
     var swiper2 = new Swiper(".proSwiper", {
       slidesPerView: 4,
       spaceBetween: 16,
