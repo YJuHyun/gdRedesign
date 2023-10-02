@@ -138,15 +138,9 @@
   display: flex;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 40%;
   transform: translateX(-50%) translateY(-50%);
   justify-content: space-between;
-  opacity: 0;
-  transition-duration: 1s;
-}
-.company .icoContainer.offset{
-  top: 40%;
-  opacity: 1;
 }
 .company .icoContainer .iconWrap{
   width: calc((100% - 16px) / 2);
@@ -181,18 +175,11 @@
 .compTxt{
   width: 100%;
   position: absolute;
-  top: 80%;
+  top: 70%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   color: #fff;
-  opacity: 0;
-  transition-duration: 1s;
-  transition-delay: 0.3s;
-}
-.compTxt.offsetT{
-  top:70%;
-  opacity: 1;
 }
 .compTxt h3{
   font-size: 32px;
