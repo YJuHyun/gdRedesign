@@ -94,17 +94,7 @@
   color: #fff;
 }
 /* 프로덕트 */
-.productSec,
-.noticeSec,
-.volunteer{
-  opacity: 0;
-  transform: translateY(10%);
-  transition-duration: 1s;
-}
-section.sectionUp{
-  opacity: 1;
-  transform: translateY(0);
-}
+
 .prodSlide:hover .productGo{
   opacity: 1;
 }
